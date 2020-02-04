@@ -15,7 +15,13 @@ main {
    } 
 
 form {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+}
+
+.box {
+    width: 300px;
 }
 
 .question {

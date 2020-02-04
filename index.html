@@ -22,27 +22,28 @@
         <div class="box question">
                 
                 <fieldset>
-                    <form>
                     <legend class="question"></legend>
-                    <div>
-                    <span class="question">${question}</span>
-                    </div>
-                    <div>
-                    <input type="radio" name="options" id="option1" value="${option1}">
-                    <label for="option1">${option1}</label>
-                    <br>
-                    <input type="radio" name="options" id="option2" value="${option2}">
-                    <label for="option2">${option2}</label>
-                    <br>
-                    <input type="radio" name="options" id="option3" value="${option3}">
-                    <label for="option3">${option3}</label>
-                    <br>
-                    <input type="radio" name="options" id="option4" value="${option4}">
-                    <label for="option4">${option4}</label>
-                    </div>
-                    </form>
+                        <form>
+                            <div>
+                            <span class="question">${question}</span>
+                            </div>
+                            <div>
+                            <input type="radio" name="options" id="option1" value="${option1}">
+                            <label for="option1">${option1}</label>
+                            <br>
+                            <input type="radio" name="options" id="option2" value="${option2}">
+                            <label for="option2">${option2}</label>
+                            <br>
+                            <input type="radio" name="options" id="option3" value="${option3}">
+                            <label for="option3">${option3}</label>
+                            <br>
+                            <input type="radio" name="options" id="option4" value="${option4}">
+                            <label for="option4">${option4}</label>
+                            </div>
+                        </form>
+                    <button class="button submit">SUBMIT</button>
                 </fieldset>
-                <button class="button submit">SUBMIT</button>
+                
         </div>
 
         <div class="box correct">
@@ -51,7 +52,7 @@
             <button class="next">NEXT</button>
            </div>
 
-        <div class="endPage">
+        <div class="box endPage">
             <p>${numberCorrect} out of ${total}!</p>
             <p>Excellent job!</p>
             <br>
