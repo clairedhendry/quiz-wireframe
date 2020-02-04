@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Zodiac Quiz</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A quiz testing your knowledge of the Zodiac signs.">
+    <meta name="author" content="Claire Hendry">
+	<link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+    
+    <div class="background">
+    <main>
+        <div class="zodiac-title">
+            <div class="title-letters">ZODIAC</div>
+            <button class="start-button">BEGIN</button>
+        </div>
+
+        <div class="box question">
+                
+                <fieldset>
+                    <form>
+                    <legend class="question"></legend>
+                    <div>
+                    <span class="question">${question}</span>
+                    </div>
+                    <div>
+                    <input type="radio" name="options" id="option1" value="${option1}">
+                    <label for="option1">${option1}</label>
+                    <br>
+                    <input type="radio" name="options" id="option2" value="${option2}">
+                    <label for="option2">${option2}</label>
+                    <br>
+                    <input type="radio" name="options" id="option3" value="${option3}">
+                    <label for="option3">${option3}</label>
+                    <br>
+                    <input type="radio" name="options" id="option4" value="${option4}">
+                    <label for="option4">${option4}</label>
+                    </div>
+                    </form>
+                </fieldset>
+                <button class="button submit">SUBMIT</button>
+        </div>
+
+        <div class="box correct">
+            <p>Correct!</p>
+            <button class="next">NEXT</button>
+           </div>
+
+        <div class="endPage">
+            <p>${numberCorrect} out of ${total}!</p>
+            <p>Excellent job!</p>
+            <br>
+            <p>You really know your stuff!</p> 
+          </div>
+
+    </main>
+    
+    </div>
+    <footer>© Claire Hendry 2020</footer>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="zodiac.js"></script>
+</body>
+</html>
+
